@@ -2,6 +2,9 @@ import "./customLogo.png"
 import "./images.jpeg"
 import './App.css';
 
+import ComboCard4 from "./components/Cards/ComboCard4"
+import CommmonCard from "./components/Cards/CommonCard"
+
 import React, { useState, useEffect } from "react"
 
 function App() {
@@ -17,7 +20,6 @@ function App() {
   }
 
   const handleKeepHover = () => {
-    
   }
 
   const handleHoverOut = () => {
@@ -30,10 +32,10 @@ function App() {
     <div className="App">
       <div className="header">
           <div className="hd-row block-middle">
-            <img width="13%" src="https://sites.google.com/site/taizingmp32017/_/rsrc/1509441614107/config/customLogo.gif?revision=11"></img>
+            <img width="13%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmRBmntSxZh99CBluc1Y-1vEERXQc9HqBbFg&usqp=CAU"></img>
             <div id="hd-row-search">
               <img width="5%" src="https://img.icons8.com/ios/50/000000/search--v3.png"></img>
-              <input placeholder="Nhap ten bai hat, hoac ca si..."></input>
+              <input placeholder="Nhập tên sản phẩm ..."></input>
             </div>
             <div id="hd-row-right">
               <div className="btn" id="hd-btn">
@@ -50,12 +52,7 @@ function App() {
           </div>
           <div className="hd-row block-middle">
             <div className="hd-flex-item">
-            { nav.map((ind,key) => { return (
-                <div className="hd-nav-item" key={key}>
-                  { ind }
-                </div>
-              )}
-            )}
+
             </div>
           </div>
       </div>
@@ -92,21 +89,43 @@ function App() {
 
         <div className="section-body">
           <div className="card">
-
+            <img src="https://lh3.googleusercontent.com/BdoRaaplaDNYSYRbYGinL43LaoWGrnansdiMDgawSksBM7NxlERC0SoVgvUh4H8rRnUCVHVNOxGvD7flVmNh=rw" />
           </div>
           <div className="card">
-            
+            <img src="https://lh3.googleusercontent.com/sgQpul0smf3zXy4JOgD7OLzhadi_PbhS2FzocH5rv8rayiKyREPBgCAmlZE_YWuXTb6S1D5kExErV6PCOQ=rw" />
           </div>
           <div className="card">
-            
+            <img src="https://lh3.googleusercontent.com/l2y1xkUV5p_aRjxyiqIQ9yyvj9vqukSKf2A2l3vd3tcnU9FefzFCScndOuyWil3w98rG618FEsz-t-moEYeI=rw" />
           </div>
           <div className="card">
-            
+            <img src="https://lh3.googleusercontent.com/w9mrW6_W7yVglkXPNlhRTXvOzl02Fazc1425qJBzrD2oxQ9Zk0Qwi7pOLjUr9ws8YUB5EC9ooNi8XXD94hc=rw" />
           </div>
         </div>
 
         <div className="section-body">
           <img src="https://thietkehaithanh.com/wp-content/uploads/2019/01/thietkehaithanh-banner-laptop-800x300.png" />
+        </div>
+
+        <div className="section-body">
+          <ComboCard4 />
+          <ComboCard4 />
+          <ComboCard4 />
+          <ComboCard4 />
+        </div>
+
+        <div className="section-body">
+        <div className="section-title">
+          Sản phẩm khác ...
+        </div>
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
+          <CommmonCard />
         </div>
 
       </div>

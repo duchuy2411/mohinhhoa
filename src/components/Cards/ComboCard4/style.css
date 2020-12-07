@@ -1,0 +1,41 @@
+.combo-card-4 {
+    width: 49%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    margin: 1% 0;
+}
+
+.c4-left {
+    width: 39%;
+    height: auto;
+}
+
+.c4-right {
+    width: 61%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c4-right .c4-r-cell {
+    width: 50%;
+    height: 50%;
+    border: 1px solid gainsboro;
+    text-align: center;
+    background-color: white;
+
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+
+.c4-r-cell .img-cell {
+    width: 10rem;
+    height: 8.8rem;
+
+    margin: 0.1rem 0;
+}
